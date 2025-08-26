@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <span id="count">0</span>
+      <button id="btn" onclick="">add</button>
+    </div>
+
+    <script>
+      const app = document.getElementById("app");
+      const count = document.getElementById("count");
+      const btn = document.getElementById("btn");
+
+      let likes = 0;
+
+      btn.addEventListener("click", () => {
+        likes++;
+        count.innerHTML = likes;
+      });
+    </script>
+  </body>
+</html>
